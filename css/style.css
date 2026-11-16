@@ -74,6 +74,9 @@ body {
 
 .site-header {
   padding: 32px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 /* Tasks 2, 3, 5, 7 and Bug 6: the card (400px wide thanks to the reset) */
@@ -84,6 +87,7 @@ body {
   border-left: 10px solid #CADCFC;
   margin: 0 auto 24px;
   margin-top: 16px;
+  position: relative;
 }
 
 /* Task 4: Shape the date tag */
@@ -138,6 +142,12 @@ body {
   color: #FFFFFF;
   font-weight: bold;
   text-decoration: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  z-index: 10;
 }
 
 
@@ -173,19 +183,18 @@ body {
   clear: both;
 }
 
-/* Task 4: Round photos */
-
-
 /* Task 5: Why not floats? (try it, then delete it) */
 
 
 /* ---------- PART 2: Positioning ---------- */
 
 /* Build C: The NEW badge */
-
-
-/* Task 6: Sticky header */
-
+.badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  padding: 4px 12px;
+}
 
 /* Task 7: Fixed Join button */
 
